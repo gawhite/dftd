@@ -1,5 +1,6 @@
 // Importing the serve function from Deno's standard library
-import { serve } from "https://deno.land/std@0.196.0/http/server.ts";
+import { serve } from "https://deno.land/std@$STD_VERSION/http/server.ts";
+serve((_req) => new Response("Hello, world"), { port: 8001 });
 
 // Function to handle requests
 async function handler(req: Request): Promise<Response> {
