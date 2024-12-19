@@ -41,7 +41,7 @@ async function handler(req: Request): Promise<Response> {
   return new Response("Not Found", { status: 404 });
 }
 
-// Start the HTTP server on port 8000
+// Start the HTTP server on port 8001
 serve(handler, { port: 8001 });
 
 console.log("Server running on http://localhost:8001");
