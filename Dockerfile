@@ -7,6 +7,6 @@ RUN deno cache main.ts
 RUN deno task build
 
 USER deno
-EXPOSE 8000
+EXPOSE 8001
 
 CMD ["run", "-A", "main.ts"]
